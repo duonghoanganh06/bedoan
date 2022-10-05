@@ -1,0 +1,29 @@
+GET http://localhost:3000/students
+
+###
+
+GET http://localhost:3000/students/6270c793bb115bfb326be364
+
+###
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+    "studentID": "18036561",
+    "name": "Duong Hoang Anh",
+    "yearOfBirth": 2000,
+    "address": "Go vap"
+}
+
+###
+
+DELETE http://localhost:3000/students/6270c793bb115bfb326be364
+
+###
+
+PATCH http://localhost:3000/students/6270c793bb115bfb326be364
+Content-Type: application/json
+
+{
+    "name": "Duong"
+}
